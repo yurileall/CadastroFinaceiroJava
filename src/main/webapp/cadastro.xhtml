@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html
+ xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Cadastro</title>
+</h:head>
+<h:body>
+	
+	<h:form>
+		<p class="rotulo">
+		Código:
+		<h:inputText value="#{cadastroFin.codigo}" class="entrada"/>
+		</p>
+		<p class="rotulo">
+		Data:
+		<h:inputText value="#{cadastroFin.dat}" class="entrada"/>
+		</p>
+		<p class="rotulo">
+		Tipo Transação:
+		<h:inputText value="#{cadastroFin.tipoTran}" class="entrada"/>
+		</p>
+		<p class="rotulo">
+		Tipo da Conta:
+		<h:inputText value="#{cadastroFin.tipoCon}" class="entrada"/>
+		</p>
+		<p class="botoa">
+		<h:commandButton value="Cadastrar" action="cadastros"/>
+		</p>
+		
+	</h:form>
+	
+		<p id="resultado">
+			Cadastros: <br/><br/> Código: "#{cadastroFin.codigo}" <br/>
+			Data: "#{cadastroFin.dat}" <br/> 
+			Tipo Transação: "#{cadastroFin.tipoTran}" <br/>
+			Tipo da Conta: "#{cadastroFin.tipoCon}" <br/>
+		</p>
+</h:body>
+</html>
